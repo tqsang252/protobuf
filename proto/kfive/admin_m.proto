@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package admin; 
+
+import "user.proto";
+
+option go_package = "./admin";
+
+
+message AdminModel {
+    string      PublicAddress   = 1;
+    UserModel   AdminUser       = 2; //Tạm UserModel
+    bool        IsEnabled       = 3;
+    int64       CreatedAt       = 4;
+    int64       UpdatedAt       = 5;
+    int64       DeletedAt       = 6; //Tạm *gorm.DeletedAt
+}

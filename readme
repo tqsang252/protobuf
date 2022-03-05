@@ -1,0 +1,1 @@
+protoc -I. --go_out="plugins=grpc:." --gorm_out="engine=postgres,enums=string,gateway:." .\proto\*.proto  

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package user; 
+
+// import "options/gorm.proto";
+
+option go_package = "proto/kfive/user";
+
+
+message UserModel {
+    string  PublicAddress       = 1;
+    string  LoginUUID           = 2;
+    string  Name                = 3;
+    string  Avatar              = 4;
+    string  Bio                 = 5;
+    string  PersonalSite        = 6; 
+    string  TwitterUsername     = 7;
+    string  Email               = 8;
+    string  PhoneNumber         = 9; 
+    int64   CreatedAt           = 10;
+    int64   UpdatedAt           = 11;
+    int64   DeletedAt           = 12; //Tạm *gorm.DeletedAt
+}
